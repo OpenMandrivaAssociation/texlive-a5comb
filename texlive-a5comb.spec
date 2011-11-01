@@ -3,7 +3,7 @@ Version:	4
 Release:	1
 Summary:	Support for a5 paper sizes
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive//macros/latex/contrib/a5comb
+URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/a5comb
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/a5comb.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/a5comb.doc.tar.xz
@@ -23,11 +23,13 @@ Superceded by geometry.
     %_texmf_mktexlsr_post
 
 %preun
-    %_texmf_mktexlsr_preun
+    if [ $1 -eq 0 ]; then
+	%_texmf_mktexlsr_pre
+    fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mltexlsr_post
+	%_texmf_mktexlsr_post
     fi
 
 #-----------------------------------------------------------------------
