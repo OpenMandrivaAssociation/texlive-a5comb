@@ -1,3 +1,9 @@
+# revision 17020
+# category Package
+# catalog-ctan /macros/latex/contrib/a5comb
+# catalog-date 2010-02-23 16:03:07 +0100
+# catalog-license pd
+# catalog-version 4
 Name:		texlive-a5comb
 Version:	4
 Release:	1
@@ -37,6 +43,7 @@ Superceded by geometry.
 %{_texmfdistdir}/tex/latex/a5comb/a5comb.sty
 %doc %{_texmfdistdir}/doc/latex/a5comb/a5comb.pdf
 %doc %{_texmfdistdir}/doc/latex/a5comb/a5comb.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -47,3 +54,5 @@ Superceded by geometry.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
