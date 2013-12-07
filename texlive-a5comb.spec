@@ -6,7 +6,7 @@
 # catalog-version 4
 Name:		texlive-a5comb
 Version:	4
-Release:	4
+Release:	5
 Summary:	Support for a5 paper sizes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/a5comb
