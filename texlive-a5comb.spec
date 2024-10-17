@@ -3,7 +3,7 @@ Version:	17020
 Release:	2
 Summary:	Support for a5 paper sizes
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/a5comb
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/a5comb
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/a5comb.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/a5comb.doc.r%{version}.tar.xz
